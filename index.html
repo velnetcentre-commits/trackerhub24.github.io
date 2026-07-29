@@ -361,7 +361,7 @@
       <div class="price-right">
         <div class="was">₹299</div>
         <div class="amount">₹149</div>
-        <a href="#" class="btn-primary" id="buy-btn">Buy Now →</a>
+        <a href="https://trackerhub.myinstamojo.com/product/habit-expense-tracker/" data-store-name="trackerhub" data-domain="https://trackerhub.myinstamojo.com" data-id="7274093" rel="im-new-checkout" data-text="Buy Now — ₹149" data-css-style="background:#75c26a; color:#ffffff; width:280px; padding:15px 0; border-radius:30px; font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:14.5px;" data-layout="vertical"></a>
         <div class="fine">Secure checkout · Editable .xlsx file</div>
       </div>
     </div>
@@ -434,14 +434,8 @@
   }, {threshold:0.4});
   tallyIO.observe(tallyEl);
 
-  // Buy button placeholder notice
-  document.getElementById('buy-btn').addEventListener('click', function(e){
-    if(this.getAttribute('href') === '#'){
-      e.preventDefault();
-      alert('Add your Gumroad / payment link here — replace the href on the "Buy Now" button in the HTML.');
-    }
-  });
+  
 </script>
-
+<script src="https://manage.instamojo.com/assets/js/pay_button/button.min.js"></script>
 </body>
 </html>
