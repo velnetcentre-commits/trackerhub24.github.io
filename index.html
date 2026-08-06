@@ -230,6 +230,35 @@
     .faq{ grid-template-columns:1fr; }
     .washer{ display:none; }
   }
+  /* ===== TESTIMONIALS ===== */
+.testimonial-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.testimonial-card{
+  background:#fff; border:1px solid var(--rule-soft); border-radius:8px;
+  padding:26px 24px; display:flex; flex-direction:column;
+  box-shadow:0 10px 24px -18px rgba(28,43,69,0.25);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.testimonial-card:hover{ transform:translateY(-4px); box-shadow:0 18px 30px -18px rgba(28,43,69,0.35); }
+.testimonial-quote{
+  font-size:14.5px; color:var(--ink-soft); line-height:1.6; margin-bottom:18px; flex:1;
+}
+.testimonial-quote::before{
+  content:"\201C"; font-family:'Fraunces',serif; font-size:34px; color:var(--gold);
+  display:block; line-height:0.6; margin-bottom:6px;
+}
+.testimonial-author{ display:flex; align-items:center; gap:10px; padding-top:14px; border-top:1px solid var(--rule); }
+.testimonial-avatar{
+  width:36px; height:36px; border-radius:50%; flex-shrink:0;
+  background:var(--ink); color:var(--paper);
+  font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:600;
+  display:flex; align-items:center; justify-content:center;
+}
+.testimonial-name{ font-size:13.5px; font-weight:600; color:var(--ink); }
+.testimonial-loc{ font-size:12px; color:var(--ink-soft); font-family:'IBM Plex Mono',monospace; }
+
+@media (max-width: 860px){
+  .testimonial-grid{ grid-template-columns:1fr; }
+}
 </style>
   <!-- Meta Pixel Code -->
 <script>
@@ -335,7 +364,66 @@ src="https://www.facebook.com/tr?id=2096931784530504&ev=PageView&noscript=1"
     </div>
   </div>
 </section>
-
+  <section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What people say</span>
+      <h2>Real people, real numbers</h2>
+    </div>
+    <div class="testimonial-grid reveal">
+      <div class="testimonial-card">
+        <p class="testimonial-quote">I've tried 3 different budgeting apps before this. None of them stuck. This sheet is different — I open it once a day, tick my habits, add my expenses, and I'm done in 2 minutes. Three months in and I'm still using it.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">PR</div>
+          <div>
+            <div class="testimonial-name">Priya R.</div>
+            <div class="testimonial-loc">Chennai</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">Was skeptical paying for a spreadsheet when free templates exist online. But the auto-calculating dashboard alone is worth it. I don't touch a single formula, everything just updates.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AK</div>
+          <div>
+            <div class="testimonial-name">Arjun K.</div>
+            <div class="testimonial-loc">Bangalore</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">Finally something that shows me both sides — my habits AND my money — on one screen. Turns out my worst spending days are also the days I skip my morning routine.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">DM</div>
+          <div>
+            <div class="testimonial-name">Divya M.</div>
+            <div class="testimonial-loc">Coimbatore</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">Set it up in under 5 minutes on Google Sheets. Works great on my phone too for quick entries. The pie chart breakdown made me realize how much I was spending on food delivery.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">KS</div>
+          <div>
+            <div class="testimonial-name">Karthik S.</div>
+            <div class="testimonial-loc">Hyderabad</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">Simple, no-nonsense, does exactly what it says. No subscription, no login, just a file that's mine to keep. Best ₹149 I've spent this year.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SV</div>
+          <div>
+            <div class="testimonial-name">Sneha V.</div>
+            <div class="testimonial-loc">Madurai</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="section" style="padding-top:0;">
   <div class="wrap">
     <div class="section-head reveal">
